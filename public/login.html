@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Maharashtra Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="brand">Maharashtra Explorer</a>
+        <nav class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="http://tourist-places-recommendation.onrender.com">Recommendation</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="Treandings.html">Trending</a>
+                <a href="login.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="login-container">
+        <div class="decoration decoration-1"></div>
+        <div class="decoration decoration-2"></div>
+        
+        <h2>Welcome Back</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required placeholder="Enter your password">
+            </div>
+            <button type="submit">Login</button>
+        </form>
+        <p>New to Maharashtra Explorer? <a href="registration.html">Create an account</a></p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', async (event) => {
+            event.preventDefault(); 
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
+            // Prepare the login request
+            const response = await fetch('http://localhost:3000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    username,
+                    password
+                }),
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                localStorage.setItem('token', data.token); 
+                alert('Login successful!');
+                window.location.href = 'index.html'; 
+            } else {
+                const error = await response.json();
+                alert('Login failed: ' + error.message); // Show error message
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Maharashtra Explorer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="registration.css">
+   
+   
+</head>
+<body>
+    <header>
+        <a href="#" class="brand"><i class="fas fa-mountain"></i> Maharashtra Explorer</a>
+        <nav class="navigation">
+            <div class="navigation-items">
+                <a href="index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="explore.html"><i class="fas fa-compass"></i> Explore</a>
+                <a href="http://tourist-places-recommendation.onrender.com"><i class="fas fa-map-marked-alt"></i> Recommendation</a>
+                <a href="gallery.html"><i class="fas fa-images"></i> Gallery</a>
+                <a href="Treandings.html"><i class="fas fa-fire"></i> Treandings</a>
+                <a href="login.html"><i class="fas fa-sign-in-alt"></i> Login</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="floating-elements">
+        <span style="width: 30px; height: 30px; left: 10%; top: 20%;"></span>
+        <span style="width: 20px; height: 20px; left: 20%; top: 50%;"></span>
+        <span style="width: 25px; height: 25px; left: 75%; top: 30%;"></span>
+        <span style="width: 15px; height: 15px; left: 80%; top: 70%;"></span>
+        <span style="width: 40px; height: 40px; left: 50%; top: 80%;"></span>
+    </div>
+
+    <div class="registration-container">
+        <h2>Join Maharashtra Explorer</h2>
+        <form id="registrationForm" method="POST">
+            <div class="form-section">
+                <h3><i class="fas fa-user-circle"></i> Personal Information</h3>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="reg-username">Username:</label>
+                        <input type="text" id="reg-username" name="username" required minlength="3" maxlength="15" pattern="^[a-zA-Z0-9]+$" title="Username must be 3-15 characters long and can only contain letters and numbers.">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="phone">Phone No:</label>
+                        <input type="tel" id="phone" name="phone" required pattern="\d{10}" title="Phone number must be 10 digits.">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="country">Country:</label>
+                        <input type="text" id="country" name="country" required>
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="gender">Gender:</label>
+                        <select id="gender" name="gender" required>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <i class="fas fa-venus-mars"></i>
+                    </div>
+                    <div class="input-group">
+                        <label for="age">Age:</label>
+                        <input type="number" id="age" name="age" required min="1" max="120">
+                        <i class="fas fa-birthday-cake"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3><i class="fas fa-lock"></i> Account Information</h3>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="reg-password">Password:</label>
+                        <input type="password" id="reg-password" name="password" required minlength="8" maxlength="15" pattern="(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,15}" title="Password must be 8-15 characters long, include at least one letter, one number, and one special character.">
+                        <i class="fas fa-key"></i>
+                        <div class="strength-bar" id="strengthBar">
+                            <div id="strength"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirmPassword" required minlength="8" oninput="validatePassword()">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit">Create Account <i class="fas fa-arrow-right"></i></button>
+        </form>
+        <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+
+    <script>
+        const passwordInput = document.getElementById('reg-password');
+        const strengthBar = document.getElementById('strength');
+
+        document.getElementById('registrationForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); 
+            const data = {
+                username: document.getElementById('reg-username').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                country: document.getElementById('country').value,
+                gender: document.getElementById('gender').value,
+                age: document.getElementById('age').value,
+                password: document.getElementById('reg-password').value,
+                confirmPassword: document.getElementById('confirm-password').value
+            };
+
+            try {
+                const response = await fetch('http://localhost:3000/register', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                if (response.ok) {
+                    console.log('Registration successful');
+                    window.location.href = 'login.html';
+                } else {
+                    console.error('Registration failed');
+                }
+            } catch (error) {
+                console.error('Error occurred during form submission:', error);
+            }
+        });
+
+        passwordInput.addEventListener('input', function() {
+            const password = passwordInput.value;
+            const strength = getStrength(password);
+            updateStrengthBar(strength);
+        });
+
+        function getStrength(password) {
+            let strength = 0;
+            if (password.length >= 8 && password.length <= 15) strength++;
+            if (/[A-Za-z]/.test(password)) strength++;
+            if (/\d/.test(password)) strength++;
+            if (/[@$!%*#?&]/.test(password)) strength++;
+            return strength;
+        }
+
+        function updateStrengthBar(strength) {
+            let colorClass = '';
+            switch (strength) {
+                case 1:
+                    colorClass = 'weak';
+                    break;
+                case 2:
+                    colorClass = 'medium';
+                    break;
+                case 3:
+                    colorClass = 'strong';
+                    break;
+                case 4:
+                    colorClass = 'very-strong';
+                    break;
+                default:
+                    colorClass = '';
+            }
+            strengthBar.className = colorClass;
+        }
+
+        function validatePassword() {
+            const password = document.getElementById('reg-password').value;
+            const confirmPassword = document.getElementById('confirm-password').value;
+            if (password !== confirmPassword) {
+                document.getElementById('confirm-password').setCustomValidity("Passwords don't match");
+            } else {
+                document.getElementById('confirm-password').setCustomValidity('');
+            }
+        }
+
+        // Create floating elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const floatingContainer = document.querySelector('.floating-elements');
+            for (let i = 0; i < 10; i++) {
+                const span = document.createElement('span');
+                const size = Math.random() * 30 + 10;
+                const posX = Math.random() * 100;
+                const delay = Math.random() * 15;
+                const duration = Math.random() * 15 + 10;
+                
+                span.style.width = `${size}px`;
+                span.style.height = `${size}px`;
+                span.style.left = `${posX}%`;
+                span.style.top = `${Math.random() * 100 + 100}%`;
+                span.style.animationDelay = `${delay}s`;
+                span.style.animationDuration = `${duration}s`;
+                
+                floatingContainer.appendChild(span);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maharashtra Explorer - Vibrant Gallery</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <a href="#" class="brand"><i class="fas fa-mountain"></i>Maharashtra<br>Explorer</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="http://tourist-places-recommendation.onrender.com">Recommendation</a>
+                <a href="gallery.html" class="active">Gallery</a>
+                <a href="Treandings.html">Trendings</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="gallery-container">
+        <h1>Colors of Maharashtra</h1>
+        
+        <div class="gallery-intro">
+            Discover the breathtaking beauty of Maharashtra through our vibrant gallery. From ancient forts to stunning landscapes, each image tells a story of this magnificent region.
+        </div>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="fort">Forts</button>
+            <button class="filter-btn" data-filter="lake">Lakes</button>
+            <button class="filter-btn" data-filter="dam">Dams</button>
+            <button class="filter-btn" data-filter="city">Cities</button>
+            <button class="filter-btn" data-filter="garden">Garden</button>
+            <button class="filter-btn" data-filter="cave">Cave</button>
+            <button class="filter-btn" data-filter="nature">Nature</button>
+            <button class="filter-btn" data-filter="waterfall">Waterfall</button>
+            <button class="filter-btn" data-filter="wildlife">Wildlife</button>
+            <button class="filter-btn" data-filter="temple">Temple</button>
+            <button class="filter-btn" data-filter="hillstation">Hillstation</button>
+            <button class="filter-btn" data-filter="palace">palace</button>
+            <button class="filter-btn" data-filter="monument">Monument</button>
+            <button class="filter-btn" data-filter="beach">Beach</button>
+            <button class="filter-btn" data-filter="park">park</button>
+            <button class="filter-btn" data-filter="entertainment">Entertainment</button>
+            <button class="filter-btn" data-filter="bridge">Bridge</button>
+            <button class="filter-btn" data-filter="aquarium">Aquarium</button>
+            <button class="filter-btn" data-filter="springs">Springs</button>
+        </div>
+        
+        <!-- Gallery Grid -->
+        <div class="dynamic-gallery">
+            <!-- Gallery items would be here (same as your original) -->
+            <!-- Example item: -->
+                 <!-- Place 1 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Sinhagad Fort.jpg" alt="Sinhagad Fort">
+    <div class="item-info">
+        <h3>Sinhagad Fort</h3>
+        <p>Ancient hill fortress located near Pune with rich historical significance</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 2 -->
+<div class="gallery-item animated" data-category="dam">
+    <img src="img/Khadakwasla Dam.jpg" alt="Khadakwasla Dam">
+    <div class="item-info">
+        <h3>Khadakwasla Dam</h3>
+        <p>Scenic dam on the Mutha River providing water to Pune city</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 3 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Mulshi Lake.jpg" alt="Mulshi Lake">
+    <div class="item-info">
+        <h3>Mulshi Lake</h3>
+        <p>Beautiful lake surrounded by Sahyadri mountains and dense forests</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 4 -->
+<div class="gallery-item animated" data-category="dam">
+    <img src="img/Panshet Dam.jpg" alt="Panshet Dam">
+    <div class="item-info">
+        <h3>Panshet Dam</h3>
+        <p>Picturesque dam known for its serene surroundings and water sports</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 5 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Rajmachi Fort.jpg" alt="Rajmachi Fort">
+    <div class="item-info">
+        <h3>Rajmachi Fort</h3>
+        <p>Historic fortification with stunning views of the Western Ghats</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 6 -->
+<div class="gallery-item animated" data-category="city">
+    <img src="img/Lavasa.jpg" alt="Lavasa">
+    <div class="item-info">
+        <h3>Lavasa</h3>
+        <p>India's first planned hill city modeled after Italian town Portofino</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 7 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Lohagad Fort.jpg" alt="Lohagad Fort">
+    <div class="item-info">
+        <h3>Lohagad Fort</h3>
+        <p>Ancient fort with magnificent architecture and panoramic views</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 8 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Pawna Lake.jpg" alt="Pawna Lake">
+    <div class="item-info">
+        <h3>Pawna Lake</h3>
+        <p>Serene lake surrounded by lush green hills and peaceful atmosphere</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 9 -->
+<div class="gallery-item animated" data-category="garden">
+    <img src="img/Okayama Friendship Garden.jpg" alt="Okayama Friendship Garden">
+    <div class="item-info">
+        <h3>Okayama Friendship Garden</h3>
+        <p>Beautiful Japanese-style garden in Pune with peaceful atmosphere</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 10 -->
+<div class="gallery-item animated" data-category="cave">
+    <img src="img/Bhaja Caves.jpg" alt="Bhaja Caves">
+    <div class="item-info">
+        <h3>Bhaja Caves</h3>
+        <p>Ancient Buddhist rock-cut caves dating back to the 2nd century BCE</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 11 -->
+<div class="gallery-item animated" data-category="nature">
+    <img src="img/Kaas Plateau.jpg" alt="Kaas Plateau">
+    <div class="item-info">
+        <h3>Kaas Plateau</h3>
+        <p>UNESCO World Heritage Site known as the Valley of Flowers of Maharashtra</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 12 -->
+<div class="gallery-item animated" data-category="waterfall">
+    <img src="img/Thoseghar Waterfalls.jpg" alt="Thoseghar Waterfalls">
+    <div class="item-info">
+        <h3>Thoseghar Waterfalls</h3>
+        <p>Series of cascading waterfalls plunging from 200 meters height</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 13 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Sajjangad Fort.jpg" alt="Sajjangad Fort">
+    <div class="item-info">
+        <h3>Sajjangad Fort</h3>
+        <p>Historical and spiritual site known as 'Fort of Good People'</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 14 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Ajinkyatara Fort.jpg" alt="Ajinkyatara Fort">
+    <div class="item-info">
+        <h3>Ajinkyatara Fort</h3>
+        <p>One of the most famous historical forts in Maharashtra</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 15 -->
+<div class="gallery-item animated" data-category="nature">
+    <img src="img/Chalkewadi Windmill Farm.jpg" alt="Chalkewadi Windmill Farm">
+    <div class="item-info">
+        <h3>Chalkewadi Windmill Farm</h3>
+        <p>One of the largest windmill farms in India with scenic landscapes</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 16 -->
+<div class="gallery-item animated" data-category="wildlife">
+    <img src="img/Vasota Fort & Koyna Wildlife Sanctuary.jpg" alt="Vasota Fort & Koyna Wildlife Sanctuary">
+    <div class="item-info">
+        <h3>Vasota Fort & Koyna Wildlife Sanctuary</h3>
+        <p>Dream destination for trekkers and wildlife lovers</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 17 -->
+<div class="gallery-item animated" data-category="nature">
+    <img src="img/Tapola.jpg" alt="Tapola">
+    <div class="item-info">
+        <h3>Tapola (Mini Kashmir)</h3>
+        <p>Hidden gem with lakeside destination surrounded by lush green hills</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 18 -->
+<div class="gallery-item animated" data-category="waterfall">
+    <img src="img/Gokak Waterfall.jpg" alt="Gokak Waterfall">
+    <div class="item-info">
+        <h3>Gokak Waterfall</h3>
+        <p>Breathtaking waterfall often compared to Niagara Falls</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 19 -->
+<div class="gallery-item animated" data-category="nature">
+    <img src="img/Dandoba Hills & Lake.jpg" alt="Dandoba Hills & Lake">
+    <div class="item-info">
+        <h3>Dandoba Hills & Lake</h3>
+        <p>Beautiful spot for trekking, nature walks, and picnics</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 20 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Krishna River Ghat & Sangameshwar Temple.jpg" alt="Krishna River Ghat & Sangameshwar Temple">
+    <div class="item-info">
+        <h3>Krishna River Ghat & Sangameshwar Temple</h3>
+        <p>Peaceful riverside spot with famous temple dedicated to Lord Shiva</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 21 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Audumber.jpg" alt="Audumber">
+    <div class="item-info">
+        <h3>Audumber (Dattadeva Temple)</h3>
+        <p>Spiritual and serene picnic spot on the banks of Krishna River</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 22 -->
+<div class="gallery-item animated" data-category="wildlife">
+    <img src="img/Sagareshwar Wildlife Sanctuary.jpg" alt="Sagareshwar Wildlife Sanctuary">
+    <div class="item-info">
+        <h3>Sagareshwar Wildlife Sanctuary</h3>
+        <p>Man-made wildlife reserve spread across 11 square kilometers</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 23 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Mahalaxmi Temple.jpg" alt="Mahalaxmi Temple">
+    <div class="item-info">
+        <h3>Mahalaxmi Temple, Kolhapur</h3>
+        <p>One of Maharashtra's most revered pilgrimage sites</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 24 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Khidrapur Kopeshwar Temple.jpg" alt="Khidrapur Kopeshwar Temple">
+    <div class="item-info">
+        <h3>Khidrapur Kopeshwar Temple</h3>
+        <p>Masterpiece of ancient Indian architecture on Krishna River banks</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 25 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Rankala Lake.jpg" alt="Rankala Lake">
+    <div class="item-info">
+        <h3>Rankala Lake</h3>
+        <p>Popular picnic spot with lush gardens and walking tracks</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 26 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Panhala Fort.jpg" alt="Panhala Fort">
+    <div class="item-info">
+        <h3>Panhala Fort</h3>
+        <p>Largest fort in the Deccan region with stunning Sahyadri views</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 27 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Vishalgad Fort.jpg" alt="Vishalgad Fort">
+    <div class="item-info">
+        <h3>Vishalgad Fort</h3>
+        <p>Majestic fort with panoramic views and historical importance</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 28 -->
+<div class="gallery-item animated" data-category="hillstation">
+    <img src="img/Gaganbawda Hill Station.jpg" alt="Gaganbawda Hill Station">
+    <div class="item-info">
+        <h3>Gaganbawda Hill Station</h3>
+        <p>Picturesque hill station with misty hills and breathtaking valleys</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 29 -->
+<div class="gallery-item animated" data-category="wildlife">
+    <img src="img/Radhanagari Wildlife Sanctuary.jpg" alt="Radhanagari Wildlife Sanctuary">
+    <div class="item-info">
+        <h3>Radhanagari Wildlife Sanctuary</h3>
+        <p>Home to Indian bison (Gaur) and other wildlife species</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 30 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Jyotiba Temple.jpg" alt="Jyotiba Temple">
+    <div class="item-info">
+        <h3>Jyotiba Temple</h3>
+        <p>Grand temple dedicated to Lord Jyotiba, an incarnation of Shiva</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 31 -->
+<div class="gallery-item animated" data-category="palace">
+    <img src="img/Shalini Palace.jpg" alt="Shalini Palace">
+    <div class="item-info">
+        <h3>Shalini Palace</h3>
+        <p>Historical palace with Indo-Saracenic architecture</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 32 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Kaneri Math.jpg" alt="Kaneri Math">
+    <div class="item-info">
+        <h3>Kaneri Math Siddhagiri Museum</h3>
+        <p>Open-air museum depicting rural life in Maharashtra</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 33 -->
+<div class="gallery-item animated" data-category="dam">
+    <img src="img/Kumbhi Dam.jpg" alt="Kumbhi Dam">
+    <div class="item-info">
+        <h3>Kumbhi Dam</h3>
+        <p>Serene water reservoir surrounded by forests and hills</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 34 -->
+<div class="gallery-item animated" data-category="waterfall">
+    <img src="img/Bhivpur Waterfall.jpg" alt="Bhivpur Waterfall">
+    <div class="item-info">
+        <h3>Bhivpur Waterfall</h3>
+        <p>Hidden gem known for its tranquility and scenic beauty</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 35 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Narsobawadi.jpg" alt="Narsobawadi">
+    <div class="item-info">
+        <h3>Narsobawadi</h3>
+        <p>Famous for Narsoba Temple dedicated to Lord Dattatreya</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 36 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Siddheshwar Temple & Lake.jpg" alt="Siddheshwar Temple & Lake">
+    <div class="item-info">
+        <h3>Siddheshwar Temple & Lake</h3>
+        <p>Solapur's most famous pilgrimage and picnic spot</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 37 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Hipparga Lake.jpg" alt="Hipparga Lake">
+    <div class="item-info">
+        <h3>Hipparga Lake</h3>
+        <p>Hidden gem and perfect picnic spot for nature lovers</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 38 -->
+<div class="gallery-item animated" data-category="wildlife">
+    <img src="img/Nannaj Great Indian Bustard Sanctuary.jpg" alt="Nannaj Great Indian Bustard Sanctuary">
+    <div class="item-info">
+        <h3>Nannaj Great Indian Bustard Sanctuary</h3>
+        <p>Wildlife reserve dedicated to critically endangered Great Indian Bustard</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 39 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Kambar Talav.jpg" alt="Kambar Talav">
+    <div class="item-info">
+        <h3>Kambar Talav</h3>
+        <p>Scenic man-made lake known for its tranquility</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 40 -->
+<div class="gallery-item animated" data-category="nature">
+    <img src="img/Barshi Hills.jpg" alt="Barshi Hills">
+    <div class="item-info">
+        <h3>Barshi Hills</h3>
+        <p>Beautiful hill range perfect for trekking and photography</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 41 -->
+<div class="gallery-item animated" data-category="monument">
+    <img src="img/Gateway of India.jpg" alt="Gateway of India">
+    <div class="item-info">
+        <h3>Gateway of India</h3>
+        <p>Iconic arch-monument built in 1924 overlooking Arabian Sea</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 42 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Marine Drive.jpg" alt="Marine Drive">
+    <div class="item-info">
+        <h3>Marine Drive</h3>
+        <p>3.6 km-long boulevard known as the 'Queen's Necklace'</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 43 -->
+<div class="gallery-item animated" data-category="cave">
+    <img src="img/Elephanta Caves.jpg" alt="Elephanta Caves">
+    <div class="item-info">
+        <h3>Elephanta Caves</h3>
+        <p>UNESCO World Heritage Site with stunning rock-cut sculptures</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 44 -->
+<div class="gallery-item animated" data-category="monument">
+    <img src="img/Chhatrapati Shivaji Maharaj Terminus.jpg" alt="Chhatrapati Shivaji Maharaj Terminus">
+    <div class="item-info">
+        <h3>Chhatrapati Shivaji Maharaj Terminus</h3>
+        <p>UNESCO-listed railway station with Victorian Gothic architecture</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 45 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Siddhivinayak Temple.jpg" alt="Siddhivinayak Temple">
+    <div class="item-info">
+        <h3>Siddhivinayak Temple</h3>
+        <p>One of Mumbai's most revered Hindu temples</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 46 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Juhu Beach.jpg" alt="Juhu Beach">
+    <div class="item-info">
+        <h3>Juhu Beach</h3>
+        <p>Famous beach known for golden sand and lively atmosphere</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 47 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Haji Ali Dargah.jpg" alt="Haji Ali Dargah">
+    <div class="item-info">
+        <h3>Haji Ali Dargah</h3>
+        <p>Famous Islamic pilgrimage site on small islet in Arabian Sea</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 48 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Chowpatty Beach.jpg" alt="Chowpatty Beach">
+    <div class="item-info">
+        <h3>Chowpatty Beach</h3>
+        <p>Well-known destination for Mumbai's street food and leisure</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 49 -->
+<div class="gallery-item animated" data-category="cave">
+    <img src="img/Kanheri Caves.jpg" alt="Kanheri Caves">
+    <div class="item-info">
+        <h3>Kanheri Caves</h3>
+        <p>Ancient Buddhist rock-cut caves within Sanjay Gandhi National Park</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 50 -->
+<div class="gallery-item animated" data-category="park">
+    <img src="img/Sanjay Gandhi National Park.jpg" alt="Sanjay Gandhi National Park">
+    <div class="item-info">
+        <h3>Sanjay Gandhi National Park</h3>
+        <p>Green oasis in Mumbai covering 104 sq. km with diverse flora/fauna</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 51 -->
+<div class="gallery-item animated" data-category="entertainment">
+    <img src="img/Film City.jpg" alt="Film City">
+    <div class="item-info">
+        <h3>Film City</h3>
+        <p>Sprawling film studio complex spread over 520 acres</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 52 -->
+<div class="gallery-item animated" data-category="bridge">
+    <img src="img/Bandra-Worli Sea Link.jpg" alt="Bandra-Worli Sea Link">
+    <div class="item-info">
+        <h3>Bandra-Worli Sea Link</h3>
+        <p>Modern engineering marvel connecting Mumbai's western suburbs</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 53 -->
+<div class="gallery-item animated" data-category="aquarium">
+    <img src="img/Taraporewala Aquarium.jpg" alt="Taraporewala Aquarium">
+    <div class="item-info">
+        <h3>Taraporewala Aquarium</h3>
+        <p>India's oldest public aquarium with marine and freshwater species</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 54 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Upvan Lake.jpg" alt="Upvan Lake">
+    <div class="item-info">
+        <h3>Upvan Lake</h3>
+        <p>Picturesque spot in Thane with serene environment</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 55 -->
+<div class="gallery-item animated" data-category="hillstation">
+    <img src="img/Yeoor Hills.jpg" alt="Yeoor Hills">
+    <div class="item-info">
+        <h3>Yeoor Hills</h3>
+        <p>Scenic hill range within Sanjay Gandhi National Park</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 56 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Tansa Lake.jpg" alt="Tansa Lake">
+    <div class="item-info">
+        <h3>Tansa Lake</h3>
+        <p>Pristine freshwater lake and paradise for nature lovers</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 57 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Kelva Beach.jpg" alt="Kelva Beach">
+    <div class="item-info">
+        <h3>Kelva Beach</h3>
+        <p>Beautiful and unspoiled beach along the Arabian Sea</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 58 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Vasai Fort.jpg" alt="Vasai Fort">
+    <div class="item-info">
+        <h3>Vasai Fort</h3>
+        <p>Historic Portuguese-era fort with majestic ruins</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 59 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Gorakhgad Fort.jpg" alt="Gorakhgad Fort">
+    <div class="item-info">
+        <h3>Gorakhgad Fort</h3>
+        <p>Lesser-known but fascinating trekking destination</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 60 -->
+<div class="gallery-item animated" data-category="lake">
+    <img src="img/Kachrali Lake.jpg" alt="Kachrali Lake">
+    <div class="item-info">
+        <h3>Kachrali Lake</h3>
+        <p>Peaceful spot in Thane with clean waters and walking tracks</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 61 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Kelwa Beach.jpg" alt="Kelwa Beach">
+    <div class="item-info">
+        <h3>Kelwa Beach</h3>
+        <p>Scenic and peaceful beach in Palghar district</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 62 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Shirgaon Fort.jpg" alt="Shirgaon Fort">
+    <div class="item-info">
+        <h3>Shirgaon Fort</h3>
+        <p>Historical site dating back to Shivaji Maharaj era</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 63 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Mahim Beach.jpg" alt="Mahim Beach">
+    <div class="item-info">
+        <h3>Mahim Beach</h3>
+        <p>Untouched coastal gem offering peaceful getaway</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 64 -->
+<div class="gallery-item animated" data-category="wildlife">
+    <img src="img/Tungareshwar Wildlife Sanctuary.jpg" alt="Tungareshwar Wildlife Sanctuary">
+    <div class="item-info">
+        <h3>Tungareshwar Wildlife Sanctuary</h3>
+        <p>Paradise for nature lovers and wildlife enthusiasts</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 65 -->
+<div class="gallery-item animated" data-category="springs">
+    <img src="img/Vajreshwari Hot Springs.jpg" alt="Vajreshwari Hot Springs">
+    <div class="item-info">
+        <h3>Vajreshwari Hot Springs</h3>
+        <p>Natural hot springs with medicinal properties</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 66 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Raigad Fort.jpg" alt="Raigad Fort">
+    <div class="item-info">
+        <h3>Raigad Fort</h3>
+        <p>Capital of Chhatrapati Shivaji Maharaj's empire</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 67 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Harihareshwar Beach & Temple.jpg" alt="Harihareshwar Beach & Temple">
+    <div class="item-info">
+        <h3>Harihareshwar Beach & Temple</h3>
+        <p>Serene beach town with famous temple dedicated to Lord Shiva</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 68 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Diveagar Beach.jpg" alt="Diveagar Beach">
+    <div class="item-info">
+        <h3>Diveagar Beach</h3>
+        <p>Hidden gem with clean, peaceful shoreline</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 69 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Murud-Janjira Fort.jpg" alt="Murud-Janjira Fort">
+    <div class="item-info">
+        <h3>Murud-Janjira Fort</h3>
+        <p>One of India's most impressive sea forts</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 70 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Korlai Fort & Lighthouse.jpg" alt="Korlai Fort & Lighthouse">
+    <div class="item-info">
+        <h3>Korlai Fort & Lighthouse</h3>
+        <p>Scenic Portuguese fort with breathtaking sea views</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 71 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Ratnadurga Fort.jpg" alt="Ratnadurga Fort">
+    <div class="item-info">
+        <h3>Ratnadurga Fort</h3>
+        <p>Historic sea fort spread over 120 acres</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 72 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Ganpatipule Beach & Temple.jpg" alt="Ganpatipule Beach & Temple">
+    <div class="item-info">
+        <h3>Ganpatipule Beach & Temple</h3>
+        <p>Picturesque coastal town with self-manifested Ganesha idol</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 73 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Jaigad Fort & Lighthouse.jpg" alt="Jaigad Fort & Lighthouse">
+    <div class="item-info">
+        <h3>Jaigad Fort & Lighthouse</h3>
+        <p>17th-century coastal fort with panoramic views</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 74 -->
+<div class="gallery-item animated" data-category="palace">
+    <img src="img/Thibaw Palace.jpg" alt="Thibaw Palace">
+    <div class="item-info">
+        <h3>Thibaw Palace</h3>
+        <p>Grand historical structure with Burmese and Indian architecture</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 75 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Velas Beach & Turtle Festival.jpg" alt="Velas Beach & Turtle Festival">
+    <div class="item-info">
+        <h3>Velas Beach & Turtle Festival</h3>
+        <p>Serene coastal destination famous for Olive Ridley Turtle Festival</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 76 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Purnagad Fort.jpg" alt="Purnagad Fort">
+    <div class="item-info">
+        <h3>Purnagad Fort</h3>
+        <p>Secluded yet historically significant fort on Konkan coastline</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 77 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Aare-Ware Beach.jpg" alt="Aare-Ware Beach">
+    <div class="item-info">
+        <h3>Aare-Ware Beach</h3>
+        <p>Picturesque twin beach with crystal-clear waters</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 78 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Devgad Beach & Fort.jpg" alt="Devgad Beach & Fort">
+    <div class="item-info">
+        <h3>Devgad Beach & Fort</h3>
+        <p>Coastal town famous for pristine beach and historic fort</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 79 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Guhagar Beach.jpg" alt="Guhagar Beach">
+    <div class="item-info">
+        <h3>Guhagar Beach</h3>
+        <p>Pristine and less-explored coastal paradise</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 80 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Hedvi Beach & Dashbhuja Ganpati Temple.jpg" alt="Hedvi Beach & Dashbhuja Ganpati Temple">
+    <div class="item-info">
+        <h3>Hedvi Beach & Dashbhuja Ganpati Temple</h3>
+        <p>Serene coastline with rare 10-armed Ganesha idol</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 81 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Kunkeshwar Temple & Beach.jpg" alt="Kunkeshwar Temple & Beach">
+    <div class="item-info">
+        <h3>Kunkeshwar Temple & Beach</h3>
+        <p>Historic Shiva temple often called 'Kashi of the Konkan'</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 82 -->
+<div class="gallery-item animated" data-category="waterfall">
+    <img src="img/Marleshwar Waterfall & Temple.jpg" alt="Marleshwar Waterfall & Temple">
+    <div class="item-info">
+        <h3>Marleshwar Waterfall & Temple</h3>
+        <p>Scenic waterfall and cave temple dedicated to Lord Shiva</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 83 -->
+<div class="gallery-item animated" data-category="ashram">
+    <img src="img/Pawas (Swami Swaroopanand Ashram).jpg" alt="Pawas (Swami Swaroopanand Ashram)">
+    <div class="item-info">
+        <h3>Pawas (Swami Swaroopanand Ashram)</h3>
+        <p>Spiritually significant village with peaceful ashram</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 84 -->
+<div class="gallery-item animated" data-category="springs">
+    <img src="img/Unhavare Hot Water Springs.jpg" alt="Unhavare Hot Water Springs">
+    <div class="item-info">
+        <h3>Unhavare Hot Water Springs</h3>
+        <p>Natural hot water source rich in medicinal minerals</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 85 -->
+<div class="gallery-item animated" data-category="temple">
+    <img src="img/Jaigad Ganpati Temple.jpg" alt="Jaigad Ganpati Temple">
+    <div class="item-info">
+        <h3>Jaigad Ganpati Temple</h3>
+        <p>Spiritually significant temple with self-manifested Ganesha idol</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 86 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Sindhudurg Fort.jpg" alt="Sindhudurg Fort">
+    <div class="item-info">
+        <h3>Sindhudurg Fort</h3>
+        <p>Magnificent sea fort built by Chhatrapati Shivaji Maharaj</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 87 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Tarkarli Beach.jpg" alt="Tarkarli Beach">
+    <div class="item-info">
+        <h3>Tarkarli Beach</h3>
+        <p>Breathtaking coastal paradise with white sandy shores</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 88 -->
+<div class="gallery-item animated" data-category="beach">
+    <img src="img/Devbagh Beach.jpg" alt="Devbagh Beach">
+    <div class="item-info">
+        <h3>Devbagh Beach</h3>
+        <p>Hidden gem at confluence of Karli River and Arabian Sea</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 89 -->
+<div class="gallery-item animated" data-category="fort">
+    <img src="img/Vijaydurg Fort.jpg" alt="Vijaydurg Fort">
+    <div class="item-info">
+        <h3>Vijaydurg Fort</h3>
+        <p>One of the oldest and strongest sea forts in Maharashtra</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+
+<!-- Place 90 -->
+<div class="gallery-item animated" data-category="hillstation">
+    <img src="img/Amboli Hill Station.jpg" alt="Amboli Hill Station">
+    <div class="item-info">
+        <h3>Amboli Hill Station</h3>
+        <p>Picturesque hill station in Western Ghats with waterfalls</p>
+        <a href="explore.html" class="view-btn">View Details</a>
+    </div>
+</div>
+            <!-- Add all other gallery items here -->
+        </div>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <i class="fas fa-mountain"></i>
+                <span>Maharashtra Explorer</span>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="explore.html">Explore</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="http://tourist-places-recommendation.onrender.com">Recommendation</a>
+                <a href="Treandings.html">Trendings</a>
+            </div>
+
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+       
+    <script src="gallery.js"></script>
+</body>
+</html>

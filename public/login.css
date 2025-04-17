@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #1a4b8c;
+    --secondary: #f9a51a;
+    --accent: #e63946;
+    --light: #f8f9fa;
+    --dark: #212529;
+    --text: #333333;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('https://images.unsplash.com/photo-1587474260584-136574528ed5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+    background-size: cover;
+    color: var(--text);
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 75, 140, 0.7);
+    z-index: -1;
+}
+
+/* Header Styling */
+header { 
+    background-color: rgba(26, 75, 140, 0.9);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Brand Styling */
+header .brand {
+    color: var(--secondary);
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2em;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 1px;
+    display: inline-block;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+header .brand::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--secondary);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+header .brand:hover {
+    transform: translateY(-2px);
+}
+
+header .brand:hover::after {
+    transform: scaleX(1);
+}
+
+/* Navigation Links Styling */
+header .navigation .navigation-items {
+    display: flex;
+    justify-content: flex-end;
+}
+
+header .navigation .navigation-items a {
+    color: var(--light);
+    font-size: 1.1em;
+    text-decoration: none;
+    margin-left: 25px;
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+header .navigation .navigation-items a:hover {
+    background-color: rgba(249, 165, 26, 0.2);
+    color: var(--secondary);
+}
+
+/* Login Container */
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    width: 420px;
+    text-align: center;
+    animation: fadeIn 0.8s ease-out;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: var(--primary);
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--secondary);
+}
+
+.input-group {
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(26, 75, 140, 0.2);
+    background: white;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--primary), #0d3a7a);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(26, 75, 140, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0d3a7a, var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(26, 75, 140, 0.4);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+p {
+    margin-top: 25px;
+    font-size: 14px;
+    color: var(--text);
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--secondary);
+    transition: width 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary);
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Maharashtra themed decorative elements */
+.decoration {
+    position: absolute;
+    opacity: 0.1;
+    z-index: -1;
+}
+
+.decoration-1 {
+    top: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="%231a4b8c" d="M50 0 L100 50 L50 100 L0 50 Z"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+.decoration-2 {
+    bottom: -30px;
+    left: -30px;
+    width: 150px;
+    height: 150px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="%23f9a51a"/></svg>') no-repeat;
+    background-size: contain;
+}
+
+/* ============================================= */
+/* MOBILE RESPONSIVE STYLES */
+/* ============================================= */
+
+@media (max-width: 992px) {
+    /* Adjust header for tablets */
+    header {
+        padding: 15px 30px;
+    }
+    
+    header .brand {
+        font-size: 1.8em;
+    }
+    
+    header .navigation .navigation-items a {
+        font-size: 1em;
+        margin-left: 15px;
+        padding: 6px 12px;
+    }
+    
+    .login-container {
+        width: 380px;
+        padding: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Adjust for smaller tablets */
+    header {
+        padding: 12px 20px;
+    }
+    
+    header .brand {
+        font-size: 1.6em;
+    }
+    
+    header .navigation .navigation-items a {
+        font-size: 0.9em;
+        margin-left: 10px;
+        padding: 5px 10px;
+    }
+    
+    .login-container {
+        width: 350px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Mobile-specific styles */
+    body {
+        background-attachment: scroll;
+        height: auto;
+        min-height: 100vh;
+        padding: 70px 0 40px;
+    }
+    
+    body::before {
+        background: rgba(26, 75, 140, 0.85);
+    }
+    
+    header {
+        padding: 10px 15px;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+    }
+    
+    header .brand {
+        font-size: 1.5em;
+        margin-bottom: 8px;
+    }
+    
+    header .navigation .navigation-items {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 5px;
+    }
+    
+    header .navigation .navigation-items a {
+        font-size: 0.8em;
+        margin: 3px 5px;
+        padding: 4px 8px;
+    }
+    
+    .login-container {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        width: 90%;
+        max-width: 350px;
+        margin: 20px auto;
+        padding: 25px 20px;
+        animation: mobileFadeIn 0.8s ease-out;
+    }
+    
+    @keyframes mobileFadeIn {
+        0% {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    h2 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+    
+    .input-group {
+        margin-bottom: 20px;
+    }
+    
+    input {
+        padding: 12px 15px;
+        font-size: 14px;
+    }
+    
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+    
+    p {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+    
+    /* Hide decorative elements on mobile */
+    .decoration {
+        display: none;
+    }
+}
+
+@media (max-width: 400px) {
+    /* Extra small devices */
+    .login-container {
+        width: 95%;
+        padding: 20px 15px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    input {
+        padding: 10px 12px;
+    }
+    
+    button {
+        padding: 10px;
+    }
+}
